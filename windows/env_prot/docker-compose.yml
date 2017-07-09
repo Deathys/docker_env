@@ -1,0 +1,10 @@
+version: '3'
+services:
+  landapi:
+    build: "./landapi"
+    ports:
+        - "8080:80"
+networks:
+  default:
+    external:
+      name: nat
