@@ -7,7 +7,7 @@ Installing docker: https://docs.docker.com/engine/installation/linux/docker-ce/u
 
 Installing docker-compose: 
   - just download one of latest release https://github.com/docker/compose/releases 
-  - then copy to /usr/local/bin/
+  - then copy docker-compose to /usr/local/bin/
   - chmod +x /usr/local/bin/docker-compose
 
 Windows host:
