@@ -13,3 +13,7 @@ services:
   ports: 
    - "5672:5672"
    - "15671:15672"
+ nginx:
+  build: ./nginx
+  ports: 
+   - "80:80"
