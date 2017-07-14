@@ -8,3 +8,12 @@ services:
   build: ./postgres
   ports: 
    - "5432:5432"
+ rabbitmq:
+  build: ./rabbitmq
+  ports: 
+   - "5672:5672"
+   - "15671:15672"
+ nginx:
+  build: ./nginx
+  ports: 
+   - "80:80"
