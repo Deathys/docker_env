@@ -3,7 +3,10 @@ services:
   landapi:
     build: "./landapi"
     ports:
-        - "8080:80"
+        - "8000:8000"
+    networks:
+      default:
+        ipv4_address: 172.31.80.2
 networks:
   default:
     external:
