@@ -13,4 +13,4 @@ Installing docker-compose:
 Windows host:
 Some useful commands:
 1. docker inspect -f "{{ .NetworkSettings.Networks.nat.IPAddress }}" "containername"
-2. docker network create -d l2bridge --subnet=192.168.1.0/12 --gateway=192.168.1.1 MyBridgeNetwork2
+2. docker network create -d l2bridge  -o com.docker.network.windowsshim.interface="Ethernet 3" --subnet=192.168.1.0/12 --gateway=192.168.1.1 MyBridge
