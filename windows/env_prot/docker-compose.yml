@@ -2,12 +2,14 @@ version: '3'
 services:
   landapi:
     build: "./landapi"
-    ports:
-        - "8000:8000"
+ #   ports:
+  #      - "8000:8000"
     networks:
       default:
-        ipv4_address: 172.31.80.2
+        #ipv4_address: 172.31.80.2
+        #ipv4_address: 192.168.56.103
+        ipv4_address: 192.168.1.52
 networks:
   default:
     external:
-      name: nat
+      name: MyBridge
