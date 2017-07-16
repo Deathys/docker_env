@@ -9,8 +9,10 @@ Installing docker-compose:
   - just download one of latest release https://github.com/docker/compose/releases 
   - then copy docker-compose to /usr/local/bin/
   - chmod +x /usr/local/bin/docker-compose
-Linux host:
+
+Some useful commands:
 1. sudo docker network create -d bridge -o com.docker.network.windowsshim.interface="enp0s9" --subnet=192.168.1.0/12 --gateway=192.168.1.1 MyBridge
+
 
 Windows host:
 Some useful commands:
