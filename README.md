@@ -5,7 +5,7 @@ Using Ubuntu 16.04 on VirtualBox
 
 Installing docker: https://docs.docker.com/engine/installation/linux/docker-ce/ubuntu/ (Install Docker CE, just follow the instructions)
 
-https://developer.ibm.com/recipes/tutorials/bridge-the-docker-containers-to-external-network/ - bridge
+https://gist.github.com/kjtanaka/38c6baed3c60b7dd9f7c727edab38851 - how connect containers to external network
 
 Installing docker-compose: 
   - just download one of latest release https://github.com/docker/compose/releases 
