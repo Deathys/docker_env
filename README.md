@@ -14,6 +14,7 @@ Installing docker-compose:
 
 Some useful commands:
 1. sudo docker network create -d bridge -o com.docker.network.windowsshim.interface="enp0s9" --subnet=192.168.1.0/12 --gateway=192.168.1.1 MyBridge
+2. sudo docker exec -i -t "CONTAINER_ID"  /bin/bash
 
 
 Windows host:
