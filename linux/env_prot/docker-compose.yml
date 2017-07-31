@@ -4,17 +4,19 @@ services:
   build: ./redis
   ports: 
    - "6379:6379"
-  networks:
-    default:
-      ipv4_address: 192.168.1.56
+#  networks:
+#    default:
+#      ipv4_address: 192.168.1.56
 
  postgres:
   build: ./postgres
   ports: 
    - "5432:5432"
-  networks:
-    default:
-      ipv4_address: 192.168.1.54
+#  networks:
+#    default:
+#      ipv4_address: 192.168.1.54
+  volumes:
+    - ./shared_vol/postgres:/postgres
 
 
  rabbitmq:
@@ -22,19 +24,21 @@ services:
   ports: 
    - "5672:5672"
    - "15671:15672"
-  networks:
-    default:
-      ipv4_address: 192.168.1.53
+#  networks:
+#    default:
+#      ipv4_address: 192.168.1.53
 
  nginx:
   build: ./nginx
   ports: 
    - "80:80"
-  networks:
-    default:
-      ipv4_address: 192.168.1.51
+  volumes:
+    - ./shared_vol/nginx:/nginx
+#  networks:
+#    default:
+#      ipv4_address: 192.168.1.51
 
-networks:
-  default:
-    external:
-      name: br0
+#networks:
+#  default:
+#    external:
+#      name: br0
